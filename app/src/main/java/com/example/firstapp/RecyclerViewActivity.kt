@@ -26,14 +26,14 @@ class RecyclerViewActivity : AppCompatActivity() {
        }
 
        fun createData() {
-           val item = ArrayList<String>()
+           val item = ArrayList<RecyclerData>()
 
-           item.add("Java")
-           item.add("C++")
-           item.add("Android")
-           item.add("iOS")
-           item.add("PHP")
-           item.add("Kotlin")
+           item.add(RecyclerData("Java", "Java description"))
+           item.add(RecyclerData("C++", "C++ description"))
+           item.add(RecyclerData("Android", "Android description"))
+           item.add(RecyclerData("iOS", "iOS description"))
+           item.add(RecyclerData("PHP", "PHP description"))
+           item.add(RecyclerData("Kotlin", "Kotlin description"))
 
            recyclerViewAdapter.setListData(item)
            recyclerViewAdapter.notifyDataSetChanged()
